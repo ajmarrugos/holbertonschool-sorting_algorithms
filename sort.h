@@ -26,10 +26,13 @@ void print_list(const listint_t *list);
 /** HELPER FUNCTIONS **/
 void swap(int *a, int *b);
 listint_t *swap_node(listint_t *node, listint_t **list);
+int partition(int *array, int lower, int higher, int size);
+void pivot_setter(int *array, int low, int high, int size);
 
 /** ALGORITHM FUNCTIONS **/
 void bubble_sort(int *array, size_t size);
 void insertion_sort_list(listint_t **list);
 void selection_sort(int *array, size_t size);
+void quick_sort(int *array, size_t size);
 
 #endif
