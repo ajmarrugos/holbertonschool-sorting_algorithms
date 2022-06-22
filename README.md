@@ -40,9 +40,9 @@ The objective is to build functions to sort an Array of numbers in a **ascending
 
 #### Quick Sort / 3-quick_sort.c
 
-This function will initialize 2 variables:
-- Temporal value: which is going to take the value at the first position of the array, to stasrt the first round of comparisions
-- Counter variable: This will be used to travel the array
+This function will initialize many variables:
+- Temporal variables: which is going to take the value at the first position of the array, to stasrt the first round of comparisions
+- Counter variables: This will be used to travel the array
 - This algorithm will start a first cicle where the travel it's going to be backwards from the last poisition of the array.
 - Once the travel begins, the algorithm will start doing a comparision between the Temporal variable with the first value found in the travel
 - If the first number found is smaller than Temp variable, a swap will be made
@@ -51,7 +51,7 @@ This function will initialize 2 variables:
 - At this point we can understand that the array will be traveled foward and backwrds
 - Doing comparisions in sequences  
 - If dont't, the cicle will continue traveling the array backwards 
-
+...(will continue)
 
 ## Big O Notation
 
@@ -66,20 +66,20 @@ Will be tested with Big O Notation to understand his complexity.
     n + k -> O(n+k)
     …
 
-The notation will be saved as "O-files"
+The notation will be saved as readable "*-O files"
 
+Function files used for this excersice:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Files/Functions           | Use/Description                                           |
+| ------------------------- | --------------------------------------------------------- |
+| sort.h                    | Header file with function prototypes                      |
+| print_array               |                                                           |
+| print_list                |                                                           |
+| swap                      |                                                           |
+| swap_node                 |                                                           |
+| partition                 |                                                           |
+| pivot_setter              |                                                           |
+| buble_sort                |                                                           |
+| insertion_sort            |                                                           |
+| selections_sort           |                                                           |
+| quick_sort                |                                                           |
