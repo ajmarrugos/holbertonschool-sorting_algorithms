@@ -1,6 +1,20 @@
 #include "sort.h"
 
 /**
+* swap - Swaps the value of a and b
+* @a: pointer to the first integer
+* @b: pointer to the second integer
+* Return: Nothing
+**/
+
+void swap(int *a, int *b)
+{
+	int tmp = *a;
+	*a = *b;
+	*b = tmp;
+}
+
+/**
 * bubble_sort - Bubble sort algorithm
 * @array: The array to be printed
 * @size: Number of elements in @array
@@ -21,18 +35,4 @@ void bubble_sort(int *array, size_t size)
 				swap(&array[tmp], &array[tmp + 1]);
 				print_array(array, size);
 			}
-}
-
-/**
-* swap - Swaps the value of a and b
-* @a: pointer to the first integer
-* @b: pointer to the second integer
-* Return: Nothing
-**/
-
-void swap(int *a, int *b)
-{
-	int tmp = *a;
-	*a = *b;
-	*b = tmp;
 }
